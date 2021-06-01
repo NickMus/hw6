@@ -1,0 +1,13 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>All Products</title>
+</head>
+<body>
+<tr class="responsive-row" th:each="product : ${productList}">
+    <td th:text="${product.id}"/>
+    <td th:text="${product.title}"/>
+    <td th:text="${product.price}"/>
+    <br>
+</tr>
+</body>
+</html>
